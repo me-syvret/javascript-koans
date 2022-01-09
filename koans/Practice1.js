@@ -49,15 +49,15 @@ describe('Practice 1', function() {
     // the input arrays will contain only unique elements
     // the output array should only contain unique elements
     // the order of the elements in the output array does not matter
-    function intersection(ar1, ar2) {
+    function union(ar1, ar2) {
       // write your solution here
     }
 
     // test cases, do not edit these
-    expect(intersection([1,5,7], [7,2,8,5]).sort()).toEqual([1,2,5,7,8]);
-    expect(intersection([99, 98, 62], [10, 53, 99]).sort()).toEqual([10,53,62,98,99]);
-    expect(intersection([99, "cool", 62], ["cool", 53, 99]).sort()).toEqual([53, 62, 99, "cool"]);
-    expect(intersection([], ['it empty'])).toEqual(['it empty']);
+    expect(union([1,5,7], [7,2,8,5]).sort()).toEqual([1,2,5,7,8]);
+    expect(union([99, 98, 62], [10, 53, 99]).sort()).toEqual([10,53,62,98,99]);
+    expect(union([99, "cool", 62], ["cool", 53, 99]).sort()).toEqual([53, 62, 99, "cool"]);
+    expect(union([], ['it empty'])).toEqual(['it empty']);
   });
 
   it('getDuplicates should return the elements of an array which appear in the array more than once', function() {
