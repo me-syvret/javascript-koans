@@ -19,7 +19,6 @@ describe('Practice 1', function() {
     // write a function that will accept an array and return a new array of only the odd numbers from the input array
     function oddOnly(numbers) {
       // write your solution here
-      return numbers.filter(n => n % 2 === 1);
     }
 
     // test cases, do not edit these
@@ -35,7 +34,6 @@ describe('Practice 1', function() {
     // the order of the elements in the output array does not matter
     function intersection(ar1, ar2) {
       // write your solution here
-      return ar2.filter(e1 => ar1.includes(e1));
     }
 
     // test cases, do not edit these
@@ -53,7 +51,6 @@ describe('Practice 1', function() {
     // the order of the elements in the output array does not matter
     function intersection(ar1, ar2) {
       // write your solution here
-      return ar1.filter(e => !ar2.includes(e)).concat(ar2);
     }
 
     // test cases, do not edit these
@@ -71,10 +68,6 @@ describe('Practice 1', function() {
     // the order of the elements in the output array does not matter
     function getDuplicates(ar) {
       // write your solution here
-      const unique = [];
-      const multiples = [];
-      ar.forEach(e => unique.includes(e) && !multiples.includes(e) ? multiples.push(e) : unique.push(e));
-      return multiples;
     }
 
     // test cases, do not edit these
