@@ -6,7 +6,7 @@ describe('about using the Set class and array iteration functions', function() {
     // Note that, in this question and all others, some words may be used in a non-technical sense.
     // Thus, the term "filter" in this question's description is not intended to imply that arr.filter needs to be used.
     function removeDuplicates(arr) {
-      return [...new Set(arr)];
+
     }
 
     // test cases, do not edit these
@@ -22,7 +22,7 @@ describe('about using the Set class and array iteration functions', function() {
     // The first inner array should contain the even numbers from the input array.
     // The second inner array should contain the odd numbers from the input array.
     function partitionOnEvenness(numbers) {
-      return [numbers.filter(n => n % 2 === 0), numbers.filter(n => n % 2 === 1)]
+
     }
 
     // test cases, do not edit these
@@ -44,9 +44,7 @@ describe('about using the Set class and array iteration functions', function() {
     // You may also consider that calling partitionOnRemainder(numbers, 2) would be equivalent to calling
     // partitionOnEvennness(numbers)
     function partitionOnRemainder(numbers, divisor) {
-      const buckets = Array.from({ length: divisor }, () => []);
-      numbers.forEach(n => buckets[n % divisor].push(n));
-      return buckets;
+      
     }
 
     // test cases, do not edit these
