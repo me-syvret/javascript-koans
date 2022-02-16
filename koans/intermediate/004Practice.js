@@ -4,7 +4,7 @@ describe('About Equality', function() {
 
     // write a function that will accept two objects as parameters and determine whether they are the SAME EXACT object
     function strictlyEqual(obj1, obj2) {
-      return obj1 === obj2;
+
     }
 
     const a = {};
@@ -35,11 +35,7 @@ describe('About Equality', function() {
     // write a function that will accept two objects as parameters and determine whether they have all the same
     // properties
     function shallowEqual(obj1, obj2) {
-      return obj1 === obj2 || (
-        !!obj1
-        && !!obj2
-        && Object.keys(obj1).every(k => obj1[k] === obj2[k])
-        && Object.keys(obj2).every(k => obj1[k] === obj2[k]));
+
     }
 
     const a = { prop1: 'value1' };
@@ -68,11 +64,7 @@ describe('About Equality', function() {
     // should permit all nested objects to differ by strict equality but still count as equal as long as their
     // properties are equal
     function deepEqual(obj1, obj2) {
-      return obj1 === obj2 || (
-        !!obj1
-        && !!obj2
-        && Object.keys(obj1).every(k => deepEqual(obj1[k], obj2[k]))
-        && Object.keys(obj2).every(k => deepEqual(obj1[k], obj2[k])));
+
     }
 
     const a = { prop1: 'value1' };
